@@ -1,40 +1,40 @@
 {
   "products": [
     {
-      "productName": "Yash Dakait  bb",
-      "price": "913",
-      "stock": "45",
-      "category": "Nulla vero veniam d",
-      "imageUrl": "https://www.towusavigupix.org.uk",
-      "description": "Culpa delectus ex e",
-      "id": "mLIqSaCYCoY"
+      "productName": "Nike Shoes",
+      "price": "15",
+      "stock": "5",
+      "category": "Footwares",
+      "imageUrl": "https://imgs.search.brave.com/z3xd83FrQGAcJqAkXUcBsImIh3DABRaD0MB7OWzvoH4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hZG4t/c3RhdGljMS5ueWth/YS5jb20vbnlrZGVz/aWduc3R1ZGlvLWlt/YWdlcy9wdWIvbWVk/aWEvY2F0YWxvZy9w/cm9kdWN0L2EvYi9h/YjgyOGFhTmlrZS03/NDk1NzMtMDE4XzEu/anBnP3JuZD0yMDIw/MDUyNjE5NTIwMCZ0/cj13LTUxMg",
+      "description": "Best Selling Shoes",
+      "id": "VQyJZJbXye0"
     },
     {
-      "productName": "Cody Watson",
-      "price": "881",
-      "stock": "12",
-      "category": "Dolore lorem dolore ",
-      "imageUrl": "https://www.wefykukewehasys.tv",
-      "description": "Magnam in repellendu",
-      "id": "3WJ4EBfUO88"
+      "productName": "Cotton T shirtt",
+      "price": "5",
+      "stock": "155",
+      "category": "Clothes",
+      "imageUrl": "https://imgs.search.brave.com/_9Zoj7nFxdFKyibLHczGBnA_MX_0AhKCxrozKVbHC3k/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyNC8w/NC8xNy8xOC80MC9h/aS1nZW5lcmF0ZWQt/ODcwMjcyNl82NDAu/anBn",
+      "description": "Comfort T Shirt",
+      "id": "r99lyhCG-j0"
     },
     {
-      "productName": "Kessie Blackwell",
-      "price": "491",
-      "stock": "90",
-      "category": "Deserunt rerum velit",
-      "imageUrl": "https://www.luxekuzypyg.co.uk",
-      "description": "Enim doloremque temp",
-      "id": "9-mJjgnIbzk"
+      "imageUrl": "https://imgs.search.brave.com/40V6-kWDtphv7xk1ZkY3c7FB_mZw3IEzcNWOad93rCA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9mZXJy/ZXJvLXJvY2hlci1w/cmVtaXVtLWNob2Nv/bGF0ZXMtZ29sZGVu/LWdsaXR0ZXItYmFj/a2dyb3VuZC1pdGFs/eS1kZWNlbWJlci0z/NDg2OTY5OTYuanBn",
+      "productName": "Ferrero Rocher",
+      "price": "50",
+      "stock": "5",
+      "category": "Food",
+      "description": "Sweet And Yumyy",
+      "id": "lgWf5S2HcsE"
     },
     {
-      "productName": "Ginger Gilliam",
-      "price": "719",
-      "stock": "54",
-      "category": "Sed velit dolorum e",
-      "imageUrl": "https://www.kupavo.mobi",
-      "description": "Nulla consectetur a",
-      "id": "1KSduoCReCA"
+      "productName": "Kitkat",
+      "price": "1",
+      "stock": "555",
+      "category": "Food",
+      "imageUrl": "https://imgs.search.brave.com/jxkp9v2EhHzse7rMC2xBl0q4tFntqdj3VdJKqsvu7ps/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdDUu/ZGVwb3NpdHBob3Rv/cy5jb20vMjcyMzE3/NS82NjU5Ny9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzY2NTk3NjI0/Mi1zdG9jay1waG90/by1pdGFseS1qdWx5/LTIwMjMtcGFja3Mt/a2l0a2F0LmpwZw",
+      "description": "Best Chochlate",
+      "id": "HQiwaOpF3ZI"
     }
   ],
   "users": [
@@ -55,6 +55,15 @@
       "company": "1234",
       "role": "user",
       "id": "qNGqOeZYHoY"
+    },
+    {
+      "fullName": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "company": "admin",
+      "role": "admin",
+      "id": "XG81pkTJd5w"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

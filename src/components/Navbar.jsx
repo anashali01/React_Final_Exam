@@ -6,6 +6,8 @@ import { setEditProduct } from "../features/products/productSlicer";
 const Navbar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const authRole = localStorage.getItem("authRole");
+  const isAdmin = authRole === "admin";
 
   const handleAddProduct = () => {
     dispatch(setEditProduct({}));
@@ -13,6 +15,8 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("authToken");
+    localStorage.removeItem("authRole");
+    localStorage.removeItem("authUser");
     navigate("/signin");
   };
 
@@ -36,46 +40,57 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link modern-link active" aria-current="page" to="/">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle modern-link"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Products
-                </a>
-                <ul className="dropdown-menu modern-dropdown">
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="/productForm"
-                      onClick={handleAddProduct}
+              {isAdmin && (
+                <>
+                  <li className="nav-item">
+                    <Link className="nav-link modern-link active" aria-current="page" to="/">
+                      Home
+                    </Link>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle modern-link"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
-                      Product Form
-                    </Link>
+                      Products
+                    </a>
+                    <ul className="dropdown-menu modern-dropdown">
+                      <li>
+                        <Link
+                          className="dropdown-item"
+                          to="/productForm"
+                          onClick={handleAddProduct}
+                        >
+                          Product Form
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="/productList">
+                          Product List
+                        </Link>
+                      </li>
+                      <li>
+                        <hr className="dropdown-divider" />
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="/productItem">
+                          Product Items
+                        </Link>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <Link className="dropdown-item" to="/productList">
-                      Product List
-                    </Link>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/productItem">
-                      Product Items
-                    </Link>
-                  </li>
-                </ul>
-              </li>
+                </>
+              )}
+              {!isAdmin && (
+                <li className="nav-item">
+                  <Link className="nav-link modern-link active" aria-current="page" to="/productItem">
+                    Product Items
+                  </Link>
+                </li>
+              )}
             </ul>
             <div className="d-flex align-items-center gap-2 modern-actions">
               <button

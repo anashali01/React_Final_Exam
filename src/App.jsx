@@ -8,6 +8,7 @@ import ProductItem from "./components/ProductItem.jsx";
 import SignUp from "./components/SignUp.jsx";
 import SignIn from "./components/SignIn.jsx";
 import RequireAuth from "./components/RequireAuth.jsx";
+import RequireAdmin from "./components/RequireAdmin.jsx";
 
 const App = () => {
   const location = useLocation();
@@ -17,21 +18,28 @@ const App = () => {
         <Navbar />
       )}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <RequireAdmin>
+              <Home />
+            </RequireAdmin>
+          }
+        />
         <Route
           path="/productForm"
           element={
-            <RequireAuth>
+            <RequireAdmin>
               <ProductForm />
-            </RequireAuth>
+            </RequireAdmin>
           }
         />
         <Route
           path="/productList"
           element={
-            <RequireAuth>
+            <RequireAdmin>
               <ProductList />
-            </RequireAuth>
+            </RequireAdmin>
           }
         />
         <Route

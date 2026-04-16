@@ -16,7 +16,7 @@ const SignIn = () => {
   };
 
   const location = useLocation();
-  const from = location.state?.from?.pathname || "/productList";
+  const from = location.state?.from?.pathname || "";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,8 +26,26 @@ const SignIn = () => {
     );
     if (existingUser) {
       localStorage.setItem("authToken", "true");
+      localStorage.setItem("authRole", existingUser.role);
+      localStorage.setItem(
+        "authUser",
+        JSON.stringify({
+          id: existingUser.id,
+          email: existingUser.email,
+          fullName: existingUser.fullName,
+          role: existingUser.role,
+        }),
+      );
+
+      const defaultRedirect =
+        existingUser.role === "admin" ? "/productList" : "/productItem";
+      const safeRedirect =
+        from && (existingUser.role === "admin" || from === "/productItem")
+          ? from
+          : defaultRedirect;
+
       alert(`Welcome back, ${existingUser.fullName}!`);
-      navigate(from, { replace: true });
+      navigate(safeRedirect, { replace: true });
     } else {
       setError("Invalid email or password. Please try again.");
     }

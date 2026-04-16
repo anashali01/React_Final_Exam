@@ -117,7 +117,6 @@ const SignUp = () => {
                     placeholder="ProductiFy Inc."
                     onChange={handleChange}
                     value={user.company || ''}
-                    required
                   />
                 </div>
 
