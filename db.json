@@ -1,0 +1,61 @@
+{
+  "products": [
+    {
+      "productName": "Yash Dakait  bb",
+      "price": "913",
+      "stock": "45",
+      "category": "Nulla vero veniam d",
+      "imageUrl": "https://www.towusavigupix.org.uk",
+      "description": "Culpa delectus ex e",
+      "id": "mLIqSaCYCoY"
+    },
+    {
+      "productName": "Cody Watson",
+      "price": "881",
+      "stock": "12",
+      "category": "Dolore lorem dolore ",
+      "imageUrl": "https://www.wefykukewehasys.tv",
+      "description": "Magnam in repellendu",
+      "id": "3WJ4EBfUO88"
+    },
+    {
+      "productName": "Kessie Blackwell",
+      "price": "491",
+      "stock": "90",
+      "category": "Deserunt rerum velit",
+      "imageUrl": "https://www.luxekuzypyg.co.uk",
+      "description": "Enim doloremque temp",
+      "id": "9-mJjgnIbzk"
+    },
+    {
+      "productName": "Ginger Gilliam",
+      "price": "719",
+      "stock": "54",
+      "category": "Sed velit dolorum e",
+      "imageUrl": "https://www.kupavo.mobi",
+      "description": "Nulla consectetur a",
+      "id": "1KSduoCReCA"
+    }
+  ],
+  "users": [
+    {
+      "fullName": "Boris Aguilar",
+      "email": "qewi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "confirmPassword": "Pa$$w0rd!",
+      "company": "Irwin and Bolton Trading",
+      "role": "user",
+      "id": "XpFT8ag-k4Q"
+    },
+    {
+      "fullName": "Yash Babu",
+      "email": "yashpapu@gmail.com",
+      "password": "1234",
+      "confirmPassword": "1234",
+      "company": "1234",
+      "role": "user",
+      "id": "qNGqOeZYHoY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
